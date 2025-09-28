@@ -10,7 +10,7 @@ const[password,setPassword]=useState("")
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden grid md:grid-cols-2">
         
         {/* Left: Subscribe Form */}
-        <div className="p-8">
+        <div className="p-8 ">
           <h2 className="text-2xl font-bold mb-4">Subscribe</h2>
           <p className="text-gray-600 mb-6">
             Sign up to get latest news, updates and special offers.
@@ -19,7 +19,7 @@ const[password,setPassword]=useState("")
           <form className="space-y-4">
             <MyInput onChange={(e)=>{setEmail(e.target.value)}} value={email} type={"email"} placeholder={"shaman@gmail.com"}/>
             <MyInput onChange={(e)=>{setPassword(e.target.value)}} value={password} type={"text"} placeholder={"***********"}/>
-            <MyButton onChange={()=>{console.log(email,password)}} text={"SIGN ME UP"} type={"submit"} />
+            <MyButton onChange={()=>{console.log(email,password)}} text={"Login"} type={"submit"} />
             
           </form>
 
